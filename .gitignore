@@ -1,0 +1,9 @@
+# ignore all zip archives
+*.zip
+
+# now ignore all JPEG and PNG images:
+*.jpg
+*.jpeg
+*.png
+
+*.pth

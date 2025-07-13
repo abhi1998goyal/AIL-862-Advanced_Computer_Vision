@@ -1,0 +1,50 @@
+###########################################################################################################################
+##############################################     Exp 1      ######################################
+(scv) (base) root@Abhishek:/home/SCV/Ass3# /root/anaconda3/envs/scv/bin/python /home/SCV/Ass3/src/train_on_synthetic.py
+Raw training classes: ['bird', 'cat', 'dog']
+Raw test synthetic classes: ['bird', 'cat', 'dog']
+Raw test non-synthetic classes: ['bird', 'cat', 'dog']
+Starting training on synthetic data with early stopping...
+Epoch 1/2, Loss: 0.3824, Synthetic Val Acc: 33.33%
+Epoch 2/2, Loss: 0.0415, Synthetic Val Acc: 33.33%
+Final Non-Synthetic Test Accuracy: 33.33%
+
+###########################################################################################################################
+##############################################    Exp 2    ######################################
+(scv) (base) root@Abhishek:/home/SCV/Ass3# /root/anaconda3/envs/scv/bin/python /home/SCV/Ass3/src/train_on_synthetic.py
+Raw training classes: ['bird', 'cat', 'dog']
+Raw test synthetic classes: ['bird', 'cat', 'dog']
+Raw test non-synthetic classes: ['bird', 'cat', 'dog']
+Starting training on synthetic data with early stopping...
+Epoch 1/2, Loss: 0.1601, Synthetic Val Acc: 99.00%
+Epoch 2/2, Loss: 0.0394, Synthetic Val Acc: 99.22%
+Final Non-Synthetic Test Accuracy: 66.56%
+
+###########################################################################################################################
+##############################################   Exp 3    ###########################################
+(scv) (base) root@Abhishek:/home/SCV/Ass3# /root/anaconda3/envs/scv/bin/python /home/SCV/Ass3/src/train_on_real.py
+Raw training classes: ['bird', 'cat', 'dog']
+Raw validation classes: ['bird', 'cat', 'dog']
+Raw test classes: ['bird', 'cat', 'dog']
+Starting training on real (non-synthetic) data with early stopping...
+Epoch 1/2 - Loss: 0.3448, Val Acc: 98.00%
+Epoch 2/2 - Loss: 0.1293, Val Acc: 99.67%
+Final Test (Non-Synthetic) Accuracy: 80.00%
+
+
+###########################################################################################################################
+################################################ Exp 4 ###########################################
+(scv) (base) root@Abhishek:/home/SCV/Ass3# /root/anaconda3/envs/scv/bin/python /home/SCV/Ass3/src/dann_training.py
+Using device: cuda
+Epoch 1/10, DOM_Loss: 0.9280, CLS_Loss: 0.1027
+Epoch 2/10, DOM_Loss: 0.8946, CLS_Loss: 0.0539
+Epoch 3/10, DOM_Loss: 0.8326, CLS_Loss: 0.0518
+Epoch 4/10, DOM_Loss: 0.7917, CLS_Loss: 0.0264
+Epoch 5/10, DOM_Loss: 0.8220, CLS_Loss: 0.0274
+Epoch 6/10, DOM_Loss: 0.7553, CLS_Loss: 0.0279
+Epoch 7/10, DOM_Loss: 0.7455, CLS_Loss: 0.0151
+Epoch 8/10, DOM_Loss: 0.7327, CLS_Loss: 0.0171
+Epoch 9/10, DOM_Loss: 0.7572, CLS_Loss: 0.0090
+Epoch 10/10, DOM_Loss: 0.6807, CLS_Loss: 0.0568
+Adapted model saved to saved_models/adapted_model.pth
+Final Test (Non-Synthetic) Accuracy: 61.22%
